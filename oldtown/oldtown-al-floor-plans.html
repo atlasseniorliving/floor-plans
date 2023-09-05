@@ -1,0 +1,100 @@
+<style>
+    * {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* container */
+    .responsive-three-column-grid-floor-plans {
+        display: block;
+    }
+
+    /* columns */
+    .responsive-three-column-grid-floor-plans>* {
+        padding: 1rem;
+    }
+
+    /* tablet breakpoint */
+    @media (min-width:768px) {
+        .responsive-three-column-grid-floor-plans {
+            display: grid;
+            grid-auto-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .buttonFloor {
+        cursor: pointer;
+        padding: 5px 10px 5px 10px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .square {
+        font-size: large;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    .floorPlanItem {
+        border: 1px solid lightgray;
+        margin: 20px;
+    }
+
+    .FloorPlanTitle {
+        font-weight: 600 !important;
+    }
+
+    ul.floor-plan-feats {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 10px 0px 10px 0px;
+    }
+
+    ul.floor-plan-feats li {
+        display: inline-block;
+        font-weight: 600;
+        padding: 0;
+    }
+</style>
+
+<div class="responsive-three-column-grid-floor-plans">
+    <div class="floorPlanItem">
+        <h3 class="FloorPlanTitle">Assisted Living Floor Plan</h3>
+        <p class="square">Approximately <b>561</b> Square feet</p>
+        
+        <ul class="floor-plan-feats">
+            <li>🛌 ONE BEDROOM</li>
+            <li>🛀 1 BATHROOM</li>
+            <li>📐 561 SQ. FT.</li>
+        </ul>
+        <h4>Inquiry for Details</h4>
+            <a class="image-floor-plan"
+                href="https://atlasseniorliving.com/legacy-reserve-old-town/wp-content/uploads/sites/10/2023/02/assisted-living-one-bedroom-floor-plans-legacy-reserve-old-town.png"><img
+                    src="https://atlasseniorliving.com/legacy-reserve-old-town/wp-content/uploads/sites/10/2023/02/assisted-living-one-bedroom-floor-plans-legacy-reserve-old-town.png"
+                    title="Assisted Living Plan | Legacy Reserve at Old Town" 
+                    alt="Assisted Living Floor Plan | Legacy Reserve at Old Town"></a>
+            <a href="https://atlasseniorliving.com/legacy-reserve-old-town/contact/"><button class="buttonFloor">Contact
+                    Us</button></a>
+    </div>
+        <div class="floorPlanItem">
+            <h3 class="FloorPlanTitle">Assisted Living Floor Plan</h3>
+            <p class="square">Approximately <b>402</b> Square feet</p>
+        
+            <ul class="floor-plan-feats">
+                <li>🛋 STUDIO</li>
+                <li>🛀 1 BATHROOM</li>
+                <li>📐 402 SQ. FT.</li>
+            </ul>
+            <h4>Inquiry for Details</h4>
+            <a class="image-floor-plan" href="https://atlasseniorliving.com/legacy-reserve-old-town/wp-content/uploads/sites/10/2023/02/assisted-living-studio-floor-plans-legacy-reserve-old-town.png"><img src="https://atlasseniorliving.com/legacy-reserve-old-town/wp-content/uploads/sites/10/2023/02/assisted-living-studio-floor-plans-legacy-reserve-old-town.png" title="Assisted Living Plan | Legacy Reserve at Old Town" alt="Assisted Living Floor Plan | Legacy Reserve at Old Town"></a>
+            <a href="https://atlasseniorliving.com/legacy-reserve-old-town/contact/"><button class="buttonFloor">Contact Us</button></a>
+        </div>
+    
+</div>
+
+<script>
+    $(document).ready(function () { //mimics Elementor popup Atlas function
+        $('.image-floor-plan').magnificPopup({ type: 'image' });
+    });
+</script>
