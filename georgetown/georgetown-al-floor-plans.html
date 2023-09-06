@@ -1,0 +1,114 @@
+<style>
+
+    /* container */
+    .responsive-three-column-grid-floor-plans {
+        display: block;
+    }
+
+    /* columns */
+    .responsive-three-column-grid-floor-plans>* {
+        padding: 1rem;
+    }
+
+    /* tablet breakpoint */
+    @media (min-width:768px) {
+        .responsive-three-column-grid-floor-plans {
+            display: grid;
+            grid-auto-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .buttonFloor {
+        cursor: pointer;
+        padding: 5px 10px 5px 10px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .square {
+        font-size: large;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    .floorPlanItem {
+        border-top: 8px solid #1d4743;
+        margin: 20px;
+        text-align: center;
+        background: rgb(243, 243, 243);
+    }
+    .FloorPlanTitle {
+        font-weight: 600 !important;
+    }
+
+    ul.floor-plan-feats {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 10px 0px 10px 0px;
+    }
+
+    ul.floor-plan-feats li {
+        display: inline-block;
+        font-weight: 600;
+        padding: 0;
+    }
+</style>
+
+<div class="responsive-three-column-grid-floor-plans">
+    <div class="floorPlanItem">
+        <h3 class="FloorPlanTitle">Assisted Living Floor Plan</h3>
+        <p class="square">Approximately <b>606</b> Square feet</p>
+        <ul class="floor-plan-feats">
+            <li>🛌 1 BEDROOM</li>
+            <li>🛀 1 BATHROOM</li>
+            <li>📐 606 SQ. FT.</li>
+        </ul>
+        <h4>Inquiry for Details</h4>
+            <a class="image-floor-plan"
+                href="https://atlasseniorliving.com/the-oscar-at-georgetown/wp-content/uploads/sites/42/2023/01/floor-plans-al-one-bedroom-the-oscar-at-georgetown.png"><img
+                    src="https://atlasseniorliving.com/the-oscar-at-georgetown/wp-content/uploads/sites/42/2023/01/floor-plans-al-one-bedroom-the-oscar-at-georgetown.png"
+                    title="Assisted Living Floor Plan | The Oscar at Georgetown" 
+                    alt="Assisted Living Floor Plan | The Oscar at Georgetown"></a>
+            <a href="https://atlasseniorliving.com/the-oscar-at-georgetown/contact/"><button class="buttonFloor">Contact Us</button></a>
+    </div>
+
+
+        <div class="floorPlanItem">
+            <h3 class="FloorPlanTitle">Studio AL Floor Plan</h3>
+            <p class="square">Approximately <b>390</b> Square feet</p>        
+            <ul class="floor-plan-feats">
+                <li>🛌 1 BEDROOM</li>
+                <li>🛀 1 BATHROOM</li>
+                <li>📐 390 SQ. FT.</li>
+            </ul>
+            <a class="image-floor-plan"
+                href="https://atlasseniorliving.com/the-oscar-at-georgetown/wp-content/uploads/sites/42/2023/01/floor-plans-al-studio-the-oscar-at-georgetown.png"><img
+                    src="https://atlasseniorliving.com/the-oscar-at-georgetown/wp-content/uploads/sites/42/2023/01/floor-plans-al-studio-the-oscar-at-georgetown.png"
+                    title="Assisted Living Floor Plan | The Oscar at Georgetown"
+                    alt="Assisted Living Floor Plan | The Oscar at Georgetown"></a>
+            <a href="https://atlasseniorliving.com/the-oscar-at-georgetown/contact/"><button class="buttonFloor">Contact Us</button></a>
+        </div>
+
+        <div class="floorPlanItem">
+            <h3 class="FloorPlanTitle">Studio AL Floor Plan</h3>
+            <p class="square">Approximately <b>408</b> Square feet</p>
+            <ul class="floor-plan-feats">
+                <li>🛌 1 BEDROOM</li>
+                <li>🛀 1 BATHROOM</li>
+                <li>📐 408 SQ. FT.</li>
+            </ul>
+            <a class="image-floor-plan"
+                href="https://atlasseniorliving.com/the-oscar-at-georgetown/wp-content/uploads/sites/42/2023/01/floor-plans-al-studio-the-oscar-at-georgetown.png"><img
+                    src="https://atlasseniorliving.com/the-oscar-at-georgetown/wp-content/uploads/sites/42/2023/01/floor-plans-al-studio-the-oscar-at-georgetown.png"
+                    title="Independent Living Plan | The Oscar at Georgetown"
+                    alt="Independent Living Floor Plan | The Oscar at Georgetown"></a>
+            <a href="https://atlasseniorliving.com/the-oscar-at-georgetown/contact/"><button class="buttonFloor">Contact Us</button></a>
+        </div>
+    
+</div>
+
+<script>
+    $(document).ready(function () { //mimics Elementor popup Atlas function
+        $('.image-floor-plan').magnificPopup({ type: 'image' });
+    });
+</script>
