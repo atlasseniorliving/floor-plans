@@ -1,0 +1,88 @@
+<style>
+    /* container */
+    .responsive-three-column-grid-floor-plans {
+        display: block;
+    }
+
+    /* columns */
+    .responsive-three-column-grid-floor-plans>* {
+        padding: 1rem;
+    }
+
+    /* tablet breakpoint */
+    @media (min-width:768px) {
+        .responsive-three-column-grid-floor-plans {
+            display: grid;
+            grid-auto-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .buttonFloor {
+        cursor: pointer;
+        padding: 5px 10px 5px 10px;
+        font-size: 16px;
+        margin-top: 20px;
+        background-color: crimson;
+    }
+
+    .square {
+        font-size: large;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    .floorPlanItem {
+        border: 1px solid lightgray;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .FloorPlanTitle {
+        font-weight: 600 !important;
+    }
+
+    ul.floor-plan-feats {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 10px 0px 10px 0px;
+    }
+
+    ul.floor-plan-feats li {
+        display: inline-block;
+        font-weight: 600;
+        padding: 0;
+    }
+
+    a.image-floor-plan img {
+        border: none !important;
+    }
+</style>
+
+<div class="responsive-three-column-grid-floor-plans">
+
+    <div class="floorPlanItem">
+        <h3 class="FloorPlanTitle">Assisted Living Studio Floor Plan</h3>
+        <!--<p class="square">Approximately <b>944</b> Square feet</p>-->
+        <ul class="floor-plan-feats">
+            <li>🛌 1 BEDROOM</li>
+            <li>🛀 1 BATHROOM</li>
+            <!--<li>📐 944 SQ. FT.</li>-->
+        </ul>
+        <h4>Inquiry for Details</h4>
+        <a class="image-floor-plan"
+            href="https://atlasseniorliving.com/the-goldton-at-venice/wp-content/uploads/sites/25/2023/04/goldton-venice-al-studio.png"><img
+                src="https://atlasseniorliving.com/the-goldton-at-venice/wp-content/uploads/sites/25/2023/04/goldton-venice-al-studio.png"
+                title="Assisted Living Floor Plan | The Goldton at Venice"
+                alt="Assisted Living Floor Plan | The Goldton at Venice"></a>
+        <a href="https://atlasseniorliving.com/the-goldton-at-venice/contact/"><button class="buttonFloor">Contact
+                Us</button></a>
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function () { //mimics Elementor popup Atlas function
+        $('.image-floor-plan').magnificPopup({ type: 'image' });
+    });
+</script>
