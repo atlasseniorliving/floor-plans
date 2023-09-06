@@ -1,0 +1,107 @@
+<style>
+    /* container */
+    .responsive-three-column-grid-floor-plans {
+        display: block;
+    }
+
+    /* columns */
+    .responsive-three-column-grid-floor-plans>* {
+        padding: 1rem;
+    }
+
+    /* tablet breakpoint */
+    @media (min-width:768px) {
+        .responsive-three-column-grid-floor-plans {
+            display: grid;
+            grid-auto-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .buttonFloor {
+        cursor: pointer;
+        padding: 5px 10px 5px 10px;
+        font-size: 16px;
+        margin-top: 20px;
+        background-color: crimson;
+    }
+
+    .square {
+        font-size: large;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    .floorPlanItem {
+        border: 1px solid lightgray;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .FloorPlanTitle {
+        font-weight: 600 !important;
+    }
+
+    ul.floor-plan-feats {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 10px 0px 10px 0px;
+    }
+
+    ul.floor-plan-feats li {
+        display: inline-block;
+        font-weight: 600;
+        padding: 0;
+    }
+
+    a.image-floor-plan img {
+        border: none !important;
+    }
+</style>
+
+<div class="responsive-three-column-grid-floor-plans">
+
+    <div class="floorPlanItem">
+        <h3 class="FloorPlanTitle">IL 2 Bedroom Floor Plan</h3>
+        <p class="square">Approximately <b>944</b> Square feet</p>
+        <ul class="floor-plan-feats">
+            <li>🛌 2 BEDROOM</li>
+            <li>🛀 2 BATHROOM</li>
+            <li>📐 944 SQ. FT.</li>
+        </ul>
+        <h4>Inquiry for Details</h4>
+        <a class="image-floor-plan"
+            href="https://atlasseniorliving.com/wildcat-senior-living/wp-content/uploads/sites/45/2023/06/two-bedroom-two-beds-two-baths-2.png"><img
+                src="https://atlasseniorliving.com/wildcat-senior-living/wp-content/uploads/sites/45/2023/06/two-bedroom-two-beds-two-baths-2.png"
+                title="Independent Living Floor Plan | Wildcat Senior Living"
+                alt="Independent Living Floor Plan | Wildcat Senior Living"></a>
+        <a href="https://atlasseniorliving.com/wildcat-senior-living/contact/"><button class="buttonFloor">Contact
+                Us</button></a>
+    </div>
+
+    <div class="floorPlanItem">
+        <h3 class="FloorPlanTitle">IL 1 Bedroom Floor Plan</h3>
+        <p class="square">Approximately <b>691</b> Square feet</p>
+        <ul class="floor-plan-feats">
+            <li>🛌 1 BEDROOM</li>
+            <li>🛀 1 BATHROOM</li>
+            <li>📐 691 SQ. FT.</li>
+        </ul>
+        <h4>Inquiry for Details</h4>
+        <a class="image-floor-plan"
+            href="https://atlasseniorliving.com/wildcat-senior-living/wp-content/uploads/sites/45/2023/06/studio-studio-one-bath-2-atlas-senior-living.png"><img
+                src="https://atlasseniorliving.com/wildcat-senior-living/wp-content/uploads/sites/45/2023/06/studio-studio-one-bath-2-atlas-senior-living.png"
+                title="Independent Living Floor Plan | Wildcat Senior Living"
+                alt="Independent Living Floor Plan | Wildcat Senior Living"></a>
+        <a href="https://atlasseniorliving.com/wildcat-senior-living/contact/"><button class="buttonFloor">Contact
+                Us</button></a>
+    </div>
+
+
+</div>
+
+<script>
+    $(document).ready(function () { //mimics Elementor popup Atlas function
+        $('.image-floor-plan').magnificPopup({ type: 'image' });
+    });
+</script>
